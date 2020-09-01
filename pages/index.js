@@ -20,40 +20,73 @@ export default function Home({ data }) {
     <div className="container">
       <Head>
         <title>Harmonics</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <main>
-        <h1 className="title">Harmonics A Cappella</h1>
-
-        <p className="description">
-          Mixed classical and contemporary a cappella society at the University
-          of Exeter. Find us on all major streaming services.
-        </p>
+        {/* <h1 className="title">Harmonics A Cappella</h1> */}
+        <img src="/logo.png" className="logo" alt="Harmonics Logo" />
+        <p className="description"></p>
+        <div className="grid">
+          <a href="https://www.facebook.com/exeterharmonics/" target="_blank">
+            <img src="/facebook.png"></img>
+          </a>
+          <a href="https://www.instagram.com/harmonics_exeter/" target="_blank">
+            <img src="/instagram.png"></img>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCO4_XUWkLlReHJjho7GE1qg"
+            target="_blank"
+          >
+            <img src="/youtube.png"></img>
+          </a>
+          <a
+            href="https://music.apple.com/us/artist/harmonics-a-cappella/1438584094"
+            target="_blank"
+          >
+            <img src="/itunes.png"></img>
+          </a>
+          <a
+            href="https://open.spotify.com/artist/6qyOWCZth9YQX78kb3ngmy?si=b5gYGWdUTXOzu6msYQQcXA"
+            target="_blank"
+          >
+            <img src="/spotify.png"></img>
+          </a>
+          <a
+            href="https://www.exeterguild.org/societies/44753/"
+            target="_blank"
+          >
+            <img src="/guild.jpg"></img>
+          </a>
+          <a href="https://twitter.com/harmonicsexeter" target="_blank">
+            <img src="/twitter.png"></img>
+          </a>
+        </div>
         {/* <Link href="/blog">
           <a>Blog</a>
         </Link> */}
 
-        <div className="grid">
+        {/* <div className="grid">
           {data.map(({ id, date, title }) => (
             <a key={id} className="card">
               <h3>{title} &rarr;</h3>
               <small>{date}</small>
             </a>
           ))}
-        </div>
+        </div> */}
       </main>
 
-      <footer>
-        {/* <a
+      {/* <footer>
+        <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a> */}
-      </footer>
+        </a>
+      </footer> */}
 
       <style jsx>{`
         .container {
@@ -63,6 +96,7 @@ export default function Home({ data }) {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background-color: #abf0d1;
         }
 
         main {
@@ -140,48 +174,55 @@ export default function Home({ data }) {
           justify-content: center;
           flex-wrap: wrap;
 
-          max-width: 800px;
-          margin-top: 3rem;
+          // max-width: 800px;
+          // margin-top: 3rem;
         }
 
-        .card {
+        .grid > a {
           margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+          // padding: 1.5rem;
+          // transition: color 0.15s ease, border-color 0.15s ease;
         }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
+        .grid > a > img {
+          height: 80px;
+          transition: opacity 2s;
+        }
+
+        .grid > a > img:hover,
+        .grid > a > img:focus,
+        .grid > a > img:active {
           color: #0070f3;
           border-color: #0070f3;
+          opacity: 0.5;
+          transition: opacity 2s;
         }
 
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
+        // .card h3 {
+        //   margin: 0 0 1rem 0;
+        //   font-size: 1.5rem;
+        // }
 
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
+        // .card p {
+        //   margin: 0;
+        //   font-size: 1.25rem;
+        //   line-height: 1.5;
+        // }
 
         .logo {
-          height: 1em;
+          width: 50%;
         }
 
         @media (max-width: 600px) {
           .grid {
             width: 100%;
-            flex-direction: column;
+            // flex-direction: column;
+          }
+          .grid > a > img {
+            height: 50px;
+          }
+          .logo {
+            width: 100%;
           }
         }
       `}</style>
