@@ -196,7 +196,7 @@ export default function Home({ data }) {
           color: #0070f3;
           border-color: #0070f3;
           opacity: 0.5;
-          transition: opacity 2s;
+          transition: opacity 0.5s;
         }
 
         // .card h3 {
