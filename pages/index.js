@@ -26,7 +26,8 @@ export default function Home({ data }) {
 
       <main>
         {/* <h1 className="title">Harmonics A Cappella</h1> */}
-        <img src="/logo.png" className="logo" alt="Harmonics Logo" />
+        <img src="/logo.png" className="logo desktop" alt="Harmonics Logo" />
+        <img src="/rsz_icon.png" className="logo mobile" alt="Harmonics Logo" />
         <p className="description"></p>
         <div className="grid">
           <a href="https://www.facebook.com/exeterharmonics/" target="_blank">
@@ -100,7 +101,7 @@ export default function Home({ data }) {
         }
 
         main {
-          padding: 5rem 0;
+          // padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -186,7 +187,7 @@ export default function Home({ data }) {
 
         .grid > a > img {
           height: 80px;
-          transition: opacity 2s;
+          transition: opacity 0.5s;
         }
 
         .grid > a > img:hover,
@@ -213,6 +214,14 @@ export default function Home({ data }) {
           width: 50%;
         }
 
+        .mobile {
+          display: none;
+        }
+
+        .desktop {
+          display: block;
+        }
+
         @media (max-width: 600px) {
           .grid {
             width: 100%;
@@ -221,8 +230,17 @@ export default function Home({ data }) {
           .grid > a > img {
             height: 50px;
           }
+          .grid > a {
+            margin: 0.5em;
+          }
           .logo {
             width: 100%;
+          }
+          .desktop {
+            display: none;
+          }
+          .mobile {
+            display: block;
           }
         }
       `}</style>
