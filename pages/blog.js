@@ -1,21 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
-import { getSortedPostsData } from "../lib/posts";
 
-export async function getStaticProps() {
-  // Get external data from the file system, API, DB, etc.
-  const data = getSortedPostsData();
-
-  // The value of the `props` key will be
-  //  passed to the `Home` component
-  return {
-    props: {
-      data,
-    },
-  };
-}
-
-export default function Home({ data }) {
+export default function Blog() {
   return (
     <div className="container">
       <Head>
@@ -24,35 +9,20 @@ export default function Home({ data }) {
       </Head>
 
       <main>
-        <h1 className="title">Harmonics A Cappella</h1>
+        <h1 className="title">Blog</h1>
 
-        <p className="description">
-          Mixed classical and contemporary a cappella society at the University
-          of Exeter. Find us on all major streaming services.
-        </p>
-        {/* <Link href="/blog">
-          <a>Blog</a>
-        </Link> */}
-
-        <div className="grid">
-          {data.map(({ id, date, title }) => (
-            <a key={id} className="card">
-              <h3>{title} &rarr;</h3>
-              <small>{date}</small>
-            </a>
-          ))}
-        </div>
+        <p className="description">See what we're up to!</p>
       </main>
 
       <footer>
-        {/* <a
+        <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a> */}
+        </a>
       </footer>
 
       <style jsx>{`
