@@ -33,7 +33,7 @@ export default function Home({ data }) {
           <a href="https://www.facebook.com/exeterharmonics/" target="_blank">
             <img src="/facebook.png"></img>
           </a>
-          <a href="https://www.instagram.com/harmonics_exeter/" target="_blank">
+          <a href="https://www.instagram.com/exeterharmonics/" target="_blank">
             <img src="/instagram.png"></img>
           </a>
           <a
@@ -60,7 +60,7 @@ export default function Home({ data }) {
           >
             <img src="/guild.jpg"></img>
           </a>
-          <a href="https://twitter.com/harmonicsexeter" target="_blank">
+          <a href="https://twitter.com/exeterharmonics" target="_blank">
             <img src="/twitter.png"></img>
           </a>
         </div>
