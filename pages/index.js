@@ -46,7 +46,7 @@ export default function Home({ data }) {
             href="https://music.apple.com/us/artist/harmonics-a-cappella/1438584094"
             target="_blank"
           >
-            <img src="/itunes.png"></img>
+            <img src="/apple.png"></img>
           </a>
           <a
             href="https://open.spotify.com/artist/6qyOWCZth9YQX78kb3ngmy?si=b5gYGWdUTXOzu6msYQQcXA"
