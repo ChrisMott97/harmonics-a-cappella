@@ -3,6 +3,34 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { urlObjectKeys } from "next/dist/next-server/lib/utils";
+import james from "../../public/images/James.png?lqip";
+import jamesWebp from "../../public/images/James.png?webp";
+
+// const Image = ({ src }) => {
+//   return (
+//     <div className="image-container">
+//       <img className="blur-image" src={require(`/images/${src}?lqip`)} />
+//       <img src={require(`/images/${src}?webp`)} />
+//       <style jsx>{`
+//         .image-container: {
+//           position: relative:
+//         }
+//         .blur-image img {
+//           blur(25px);
+//           width: 300px;
+//           height: 200px;
+//         }
+//         img {
+//           position: absolute;
+//           width: 300px;
+//           height: 200px;
+//           top: 0;
+//           left: 0;
+//         }
+//     `}</style>
+//     </div>
+//   );
+// };
 
 export default function Auditions() {
   const router = useRouter();
@@ -21,10 +49,14 @@ export default function Auditions() {
         </div>
         <div className="grid" style={{ margin: "20px" }}>
           <div style={{ textAlign: "center" }}>
-            <div
-              className="card"
-              style={{ backgroundImage: "url('/James.png')" }}
-            />
+            {/* <div className="card" style={{ backgroundImage: { james } }} /> */}
+            {/* <img className="card" src={james} />
+            <img className="card" src={jamesWebp} /> */}
+            <picture>
+              <source className="card" srcSet={jamesWebp} type="image/webp" />
+              <source className="card" srcSet={james} type="image/png" />
+              <img className="card" src={james} />
+            </picture>
             James
             <br />
             President
@@ -32,7 +64,7 @@ export default function Auditions() {
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/Chris.png')" }}
+              style={{ backgroundImage: "url('/images/Chris.png?lqip')" }}
             />
             Chris
             <br />
@@ -41,7 +73,7 @@ export default function Auditions() {
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/Erin.png')" }}
+              style={{ backgroundImage: "url('/images/Erin.png?lqip')" }}
             />
             Erin
             <br />
@@ -50,7 +82,7 @@ export default function Auditions() {
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/Lizzie.png')" }}
+              style={{ backgroundImage: "url('/images/Lizzie.png?lqip')" }}
             />
             Lizzie
             <br />

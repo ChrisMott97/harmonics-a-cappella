@@ -20,7 +20,7 @@ export default function Auditions() {
         </div>
         <div
           style={{
-            backgroundImage: "url('/cover.jpg')",
+            backgroundImage: "url('/images/cover.jpg')",
             backgroundPosition: "center",
             backgroundSize: "cover",
             width: "50vh",
