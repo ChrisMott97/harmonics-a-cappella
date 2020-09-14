@@ -27,21 +27,21 @@ export default function Auditions() {
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/description-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/description-24px.svg')" }}
             />
             1. Fill out a quick form
           </div>
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/videocam-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/videocam-24px.svg')" }}
             />
             2. Record some video
           </div>
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/email-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/email-24px.svg')" }}
             />
             3. Send us the videos
           </div>
@@ -63,6 +63,7 @@ export default function Auditions() {
         </div> */}
         <div style={{ fontSize: "3vh", textAlign: "center" }}>
           If you get stuck, feel free to message us on any social media platform
+          shown
           <a href="/">
             {" "}
             <u>here</u>

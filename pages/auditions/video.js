@@ -17,7 +17,10 @@ export default function Auditions() {
       <main>
         <div style={{ margin: "20px", textAlign: "center" }}>
           Read the document <br />
-          <a href="https://drive.google.com/drive/folders/1Q2aZYutmKJ-lBCUKUY3vzSJOw68o7B6i?usp=sharing">
+          <a
+            href="https://drive.google.com/drive/folders/1-4WaJnDXs-6KlEqYUBgG-pFMyRtdahyK?usp=sharing"
+            target="_blank"
+          >
             <u>here</u>
           </a>
           <br /> to find out how to record your video!

@@ -26,42 +26,55 @@ export default function Home({ data }) {
 
       <main>
         {/* <h1 className="title">Harmonics A Cappella</h1> */}
-        <img src="/logo.png" className="logo desktop" alt="Harmonics Logo" />
-        <img src="/rsz_icon.png" className="logo mobile" alt="Harmonics Logo" />
-        <p className="description"></p>
+        <img
+          src="/images/logo.png"
+          className="logo desktop"
+          alt="Harmonics Logo"
+        />
+        <img
+          src="/images/rsz_icon.png"
+          className="logo mobile"
+          alt="Harmonics Logo"
+        />
+        <p className="description">
+          Auditions are open now!{" "}
+          <a href="/auditions">
+            <u>Click here to sign up!</u>
+          </a>
+        </p>
         <div className="grid">
           <a href="https://www.facebook.com/exeterharmonics/" target="_blank">
-            <img src="/facebook.png"></img>
+            <img src="/images/facebook.png"></img>
           </a>
           <a href="https://www.instagram.com/exeterharmonics/" target="_blank">
-            <img src="/instagram.png"></img>
+            <img src="/images/instagram.png"></img>
           </a>
           <a
             href="https://www.youtube.com/channel/UCO4_XUWkLlReHJjho7GE1qg"
             target="_blank"
           >
-            <img src="/youtube.png"></img>
+            <img src="/images/youtube.png"></img>
           </a>
           <a
             href="https://music.apple.com/us/artist/harmonics-a-cappella/1438584094"
             target="_blank"
           >
-            <img src="/apple.png"></img>
+            <img src="/images/apple.png"></img>
           </a>
           <a
             href="https://open.spotify.com/artist/6qyOWCZth9YQX78kb3ngmy?si=b5gYGWdUTXOzu6msYQQcXA"
             target="_blank"
           >
-            <img src="/spotify.png"></img>
+            <img src="/images/spotify.png"></img>
           </a>
           <a
             href="https://www.exeterguild.org/societies/44753/"
             target="_blank"
           >
-            <img src="/guild.jpg"></img>
+            <img src="/images/guild.jpg"></img>
           </a>
           <a href="https://twitter.com/exeterharmonics" target="_blank">
-            <img src="/twitter.png"></img>
+            <img src="/images/twitter.png"></img>
           </a>
         </div>
         {/* <Link href="/blog">
@@ -153,11 +166,12 @@ export default function Home({ data }) {
         .title,
         .description {
           text-align: center;
+          font-size: 5vh;
         }
 
         .description {
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 4vh;
         }
 
         code {

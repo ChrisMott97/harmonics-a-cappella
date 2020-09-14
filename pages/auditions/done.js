@@ -20,11 +20,11 @@ export default function Auditions() {
         </div>
         <div
           style={{
-            backgroundImage: "url('/cover.jpg')",
+            backgroundImage: "url('/images/ball.jpg')",
             backgroundPosition: "center",
             backgroundSize: "cover",
             width: "50vh",
-            height: "30vh",
+            height: "40vh",
           }}
         ></div>
         <div style={{ margin: "20px", textAlign: "center", fontSize: "3vh" }}>
