@@ -3,8 +3,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { urlObjectKeys } from "next/dist/next-server/lib/utils";
-import james from "../../public/images/James.png?lqip";
-import jamesWebp from "../../public/images/James.png?webp";
+import james from "../../public/images/James.jpg";
+import jamesWebp from "../../public/images/James.webp";
+import chris from "../../public/images/Chris.jpg";
+import chrisWebp from "../../public/images/Chris.webp";
+import lizzie from "../../public/images/Lizzie.jpg";
+import lizzieWebp from "../../public/images/Lizzie.webp";
+import erin from "../../public/images/Erin.jpg";
+import erinWebp from "../../public/images/Erin.webp";
 
 // const Image = ({ src }) => {
 //   return (
@@ -48,20 +54,54 @@ export default function Auditions() {
           First, say hello to our committee!
         </div>
         <div className="grid" style={{ margin: "20px" }}>
-          <div style={{ textAlign: "center" }}>
-            {/* <div className="card" style={{ backgroundImage: { james } }} /> */}
-            {/* <img className="card" src={james} />
+          {/* <div className="card" style={{ backgroundImage: { james } }} /> */}
+          {/* <img className="card" src={james} />
             <img className="card" src={jamesWebp} /> */}
+          <div style={{ textAlign: "center" }}>
             <picture>
-              <source className="card" srcSet={jamesWebp} type="image/webp" />
-              <source className="card" srcSet={james} type="image/png" />
+              <source srcSet={jamesWebp} type="image/webp" />
+              <source srcSet={james} type="image/jpeg" />
               <img className="card" src={james} />
             </picture>
+            <br />
             James
             <br />
             President
           </div>
           <div style={{ textAlign: "center" }}>
+            <picture>
+              <source srcSet={chrisWebp} type="image/webp" />
+              <source srcSet={chris} type="image/jpeg" />
+              <img className="card" src={chris} />
+            </picture>
+            <br />
+            Chris
+            <br />
+            Treasurer
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <picture>
+              <source srcSet={lizzieWebp} type="image/webp" />
+              <source srcSet={lizzie} type="image/jpeg" />
+              <img className="card" src={lizzie} />
+            </picture>
+            <br />
+            Lizzie
+            <br />
+            Musical Director
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <picture>
+              <source srcSet={erinWebp} type="image/webp" />
+              <source srcSet={erin} type="image/jpeg" />
+              <img className="card" src={erin} />
+            </picture>
+            <br />
+            Erin
+            <br />
+            Musical Director
+          </div>
+          {/* <div style={{ textAlign: "center" }}>
             <div
               className="card"
               style={{ backgroundImage: "url('/images/Chris.png?lqip')" }}
@@ -87,7 +127,7 @@ export default function Auditions() {
             Lizzie
             <br />
             Musical Director
-          </div>
+          </div> */}
         </div>
         <button
           onClick={() => {

@@ -63,6 +63,7 @@ export default function Auditions() {
         </div> */}
         <div style={{ fontSize: "3vh", textAlign: "center" }}>
           If you get stuck, feel free to message us on any social media platform
+          shown
           <a href="/">
             {" "}
             <u>here</u>

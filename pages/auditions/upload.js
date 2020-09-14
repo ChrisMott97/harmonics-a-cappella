@@ -25,7 +25,8 @@ export default function Auditions() {
             <a href="http://www.wetransfer.com">http://www.wetransfer.com</a>
           </u>
           <br></br>
-          if you haven't already :)
+          sending to the email <br />
+          <u>hello@exeterharmonics.com</u>
         </div>
 
         <button

@@ -36,7 +36,12 @@ export default function Home({ data }) {
           className="logo mobile"
           alt="Harmonics Logo"
         />
-        <p className="description"></p>
+        <p className="description">
+          Auditions are open now!{" "}
+          <a href="/auditions">
+            <u>Click here to sign up!</u>
+          </a>
+        </p>
         <div className="grid">
           <a href="https://www.facebook.com/exeterharmonics/" target="_blank">
             <img src="/images/facebook.png"></img>
@@ -161,11 +166,12 @@ export default function Home({ data }) {
         .title,
         .description {
           text-align: center;
+          font-size: 5vh;
         }
 
         .description {
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 4vh;
         }
 
         code {
