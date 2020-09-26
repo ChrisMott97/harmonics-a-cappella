@@ -36,6 +36,12 @@ export default function Home({ data }) {
           className="logo mobile"
           alt="Harmonics Logo"
         />
+        <p className="description">
+          Auditions are open now!{" "}
+          <a href="/auditions">
+            <u>Click here to sign up!</u>
+          </a>
+        </p>
         <div className="grid">
           <a href="https://www.facebook.com/exeterharmonics/" target="_blank">
             <img src="/images/facebook.png"></img>

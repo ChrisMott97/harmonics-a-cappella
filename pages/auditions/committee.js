@@ -2,7 +2,41 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { urlObjectKeys } from "next/dist/next-server/lib/utils";
+import james from "../../public/images/James.jpg";
+import jamesWebp from "../../public/images/James.webp";
+import chris from "../../public/images/Chris.jpg";
+import chrisWebp from "../../public/images/Chris.webp";
+import lizzie from "../../public/images/Lizzie.jpg";
+import lizzieWebp from "../../public/images/Lizzie.webp";
+import erin from "../../public/images/Erin.jpg";
+import erinWebp from "../../public/images/Erin.webp";
+
+// const Image = ({ src }) => {
+//   return (
+//     <div className="image-container">
+//       <img className="blur-image" src={require(`/images/${src}?lqip`)} />
+//       <img src={require(`/images/${src}?webp`)} />
+//       <style jsx>{`
+//         .image-container: {
+//           position: relative:
+//         }
+//         .blur-image img {
+//           blur(25px);
+//           width: 300px;
+//           height: 200px;
+//         }
+//         img {
+//           position: absolute;
+//           width: 300px;
+//           height: 200px;
+//           top: 0;
+//           left: 0;
+//         }
+//     `}</style>
+//     </div>
+//   );
+// };
 
 export default function Auditions() {
   const router = useRouter();
@@ -16,66 +50,91 @@ export default function Auditions() {
       </Head>
 
       <main>
-        <div
-          style={{ marginBottom: "10px", textAlign: "center", fontSize: "5vh" }}
-        >
-          Harmonics Auditions!
+        <div style={{ margin: "20px", fontSize: "4vh", textAlign: "center" }}>
+          First, say hello to our committee!
         </div>
-        <div style={{ fontSize: "3vh" }}>Audition in three easy steps :)</div>
-
-        <div className="grid" style={{ margin: "10px" }}>
+        <div className="grid" style={{ margin: "20px" }}>
+          {/* <div className="card" style={{ backgroundImage: { james } }} /> */}
+          {/* <img className="card" src={james} />
+            <img className="card" src={jamesWebp} /> */}
           <div style={{ textAlign: "center" }}>
+            <picture>
+              <source srcSet={jamesWebp} type="image/webp" />
+              <source srcSet={james} type="image/jpeg" />
+              <img className="card" src={james} />
+            </picture>
+            <br />
+            James
+            <br />
+            President
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <picture>
+              <source srcSet={chrisWebp} type="image/webp" />
+              <source srcSet={chris} type="image/jpeg" />
+              <img className="card" src={chris} />
+            </picture>
+            <br />
+            Chris
+            <br />
+            Treasurer
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <picture>
+              <source srcSet={lizzieWebp} type="image/webp" />
+              <source srcSet={lizzie} type="image/jpeg" />
+              <img className="card" src={lizzie} />
+            </picture>
+            <br />
+            Lizzie
+            <br />
+            Musical Director
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <picture>
+              <source srcSet={erinWebp} type="image/webp" />
+              <source srcSet={erin} type="image/jpeg" />
+              <img className="card" src={erin} />
+            </picture>
+            <br />
+            Erin
+            <br />
+            Musical Director
+          </div>
+          {/* <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/images/description-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/Chris.png?lqip')" }}
             />
-            1. Fill out a quick form
+            Chris
+            <br />
+            Treasurer
           </div>
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/images/videocam-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/Erin.png?lqip')" }}
             />
-            2. Record some video
+            Erin
+            <br />
+            Musical Director
           </div>
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/images/email-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/Lizzie.png?lqip')" }}
             />
-            3. Send us the videos
-          </div>
+            Lizzie
+            <br />
+            Musical Director
+          </div> */}
         </div>
-        {/* <div
-          style={{ marginBottom: "10px", fontSize: "4vh", textAlign: "left" }}
-        >
-          1. Fill out a quick form
-        </div>
-        <div
-          style={{ marginBottom: "10px", fontSize: "4vh", textAlign: "left" }}
-        >
-          2. Follow the audition guide and film your audition
-        </div>
-        <div
-          style={{ marginBottom: "10px", fontSize: "4vh", textAlign: "left" }}
-        >
-          3. Send us your audition using WeTransfer
-        </div> */}
-        <div style={{ fontSize: "3vh", textAlign: "center" }}>
-          If you get stuck, feel free to message us on any social media platform
-          shown
-          <a href="/">
-            {" "}
-            <u>here</u>
-          </a>
-        </div>
-
         <button
           onClick={() => {
-            router.push("/auditions/committee");
+            router.push("/auditions/signup");
           }}
         >
-          Start
+          Hello!
         </button>
       </main>
 
@@ -89,12 +148,13 @@ export default function Auditions() {
           align-items: center;
           background-color: #abf0d1;
         }
+
         .card {
           background-position: center;
           background-size: contain;
-          width: 20vh;
-          height: 20vh;
-          margin: 5px;
+          width: 30vh;
+          height: 30vh;
+          margin: 20px;
         }
 
         iframe {
@@ -126,7 +186,6 @@ export default function Auditions() {
            background-color: #ffffff;
           opacity: 0.7;
           cursor: pointer;
-          margin-top: 20px;
         }
         button:hover {
           opacity: 1;
@@ -134,7 +193,7 @@ export default function Auditions() {
         }
 
         main {
-          padding: 30px;
+          // padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -259,7 +318,12 @@ export default function Auditions() {
         @media (max-width: 600px) {
           .grid {
             width: 100%;
+            flex-wrap: wrap;
             // flex-direction: column;
+          }
+          .card {
+            height: 20vh;
+            width: 20vh;
           }
           .grid > a > img {
             height: 50px;

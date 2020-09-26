@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 export default function Auditions() {
   const router = useRouter();
@@ -16,66 +15,26 @@ export default function Auditions() {
       </Head>
 
       <main>
-        <div
-          style={{ marginBottom: "10px", textAlign: "center", fontSize: "5vh" }}
-        >
-          Harmonics Auditions!
+        <div style={{ margin: "20px", textAlign: "center" }}>
+          Congratulations, you've done the hardest bit!
         </div>
-        <div style={{ fontSize: "3vh" }}>Audition in three easy steps :)</div>
-
-        <div className="grid" style={{ margin: "10px" }}>
-          <div style={{ textAlign: "center" }}>
-            <div
-              className="card"
-              style={{ backgroundImage: "url('/images/description-24px.svg')" }}
-            />
-            1. Fill out a quick form
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <div
-              className="card"
-              style={{ backgroundImage: "url('/images/videocam-24px.svg')" }}
-            />
-            2. Record some video
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <div
-              className="card"
-              style={{ backgroundImage: "url('/images/email-24px.svg')" }}
-            />
-            3. Send us the videos
-          </div>
-        </div>
-        {/* <div
-          style={{ marginBottom: "10px", fontSize: "4vh", textAlign: "left" }}
-        >
-          1. Fill out a quick form
-        </div>
-        <div
-          style={{ marginBottom: "10px", fontSize: "4vh", textAlign: "left" }}
-        >
-          2. Follow the audition guide and film your audition
-        </div>
-        <div
-          style={{ marginBottom: "10px", fontSize: "4vh", textAlign: "left" }}
-        >
-          3. Send us your audition using WeTransfer
-        </div> */}
-        <div style={{ fontSize: "3vh", textAlign: "center" }}>
-          If you get stuck, feel free to message us on any social media platform
-          shown
-          <a href="/">
-            {" "}
-            <u>here</u>
-          </a>
+        <div style={{ margin: "20px", textAlign: "center", fontSize: "3vh" }}>
+          Please upload your video(s) at
+          <br></br>
+          <u>
+            <a href="http://www.wetransfer.com">http://www.wetransfer.com</a>
+          </u>
+          <br></br>
+          sending to the email <br />
+          <u>hello@exeterharmonics.com</u>
         </div>
 
         <button
           onClick={() => {
-            router.push("/auditions/committee");
+            router.push("/auditions/done");
           }}
         >
-          Start
+          Done!
         </button>
       </main>
 
@@ -89,13 +48,6 @@ export default function Auditions() {
           align-items: center;
           background-color: #abf0d1;
         }
-        .card {
-          background-position: center;
-          background-size: contain;
-          width: 20vh;
-          height: 20vh;
-          margin: 5px;
-        }
 
         iframe {
           width: 40%;
@@ -106,9 +58,9 @@ export default function Auditions() {
           src: url("/fonts/HelveticaNeue-Light.woff2"); // pattern: /directoryName/file.extension
         }
 
-        // div {
-        //   font-size: 5vh;
-        // }
+        div {
+          font-size: 5vh;
+        }
         button {
            display: inline-block;
            padding: 0.35em 1.2em;
@@ -126,7 +78,6 @@ export default function Auditions() {
            background-color: #ffffff;
           opacity: 0.7;
           cursor: pointer;
-          margin-top: 20px;
         }
         button:hover {
           opacity: 1;
@@ -134,7 +85,7 @@ export default function Auditions() {
         }
 
         main {
-          padding: 30px;
+          // padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
