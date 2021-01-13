@@ -103,7 +103,7 @@ export default function Auditions() {
 
         @font-face {
           font-family: "helvetica-local";
-          src: url("/fonts/HelveticaNeue-Light.woff2"); // pattern: /directoryName/file.extension
+          src: url("/fonts/HelveticaNeue-Medium.woff2"); // pattern: /directoryName/file.extension
         }
 
         // div {
