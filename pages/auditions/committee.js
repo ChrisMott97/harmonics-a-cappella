@@ -11,6 +11,8 @@ import lizzie from "../../public/images/Lizzie.jpg";
 import lizzieWebp from "../../public/images/Lizzie.webp";
 import erin from "../../public/images/Erin.jpg";
 import erinWebp from "../../public/images/Erin.webp";
+import george from "../../public/images/George.jpg";
+import georgeWebp from "../../public/images/George.webp";
 
 // const Image = ({ src }) => {
 //   return (
@@ -100,6 +102,17 @@ export default function Auditions() {
             Erin
             <br />
             Musical Director
+          </div>
+          <div style={{ textAlign: "center", fontSize: "2vh" }}>
+            <picture>
+              <source srcSet={georgeWebp} type="image/webp" />
+              <source srcSet={george} type="image/jpeg" />
+              <img className="card" src={george} />
+            </picture>
+            <br />
+            Georgina
+            <br />
+            Social and Welfare Secretary
           </div>
           {/* <div style={{ textAlign: "center" }}>
             <div
