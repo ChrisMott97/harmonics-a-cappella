@@ -18,7 +18,7 @@ export default function Auditions() {
         <div style={{ margin: "20px" }}>Now a quick form:</div>
         <iframe
           id="gform"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSc7Axb9L8GP6Q5kxNoIoRb2--Hcaw8zD9k2xNlwCalImazjNA/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd3G9JdKiifAoo9paj4uT_GCYbU0_AEacTK1RLElu-sjZVBQA/viewform?embedded=true"
           height="400vh"
           frameborder="0"
           marginheight="0"
