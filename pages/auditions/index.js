@@ -27,21 +27,21 @@ export default function Auditions() {
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/images/description-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/description-24px.svg')", fontSize: "2vh" }}
             />
             1. Fill out a quick form
           </div>
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/images/videocam-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/videocam-24px.svg')", fontSize: "2vh" }}
             />
             2. Record some video
           </div>
           <div style={{ textAlign: "center" }}>
             <div
               className="card"
-              style={{ backgroundImage: "url('/images/email-24px.svg')" }}
+              style={{ backgroundImage: "url('/images/email-24px.svg')", fontSize: "2vh" }}
             />
             3. Send us the videos
           </div>

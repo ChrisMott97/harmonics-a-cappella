@@ -57,7 +57,7 @@ export default function Auditions() {
           {/* <div className="card" style={{ backgroundImage: { james } }} /> */}
           {/* <img className="card" src={james} />
             <img className="card" src={jamesWebp} /> */}
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center", fontSize: "2vh" }}>
             <picture>
               <source srcSet={jamesWebp} type="image/webp" />
               <source srcSet={james} type="image/jpeg" />
@@ -68,7 +68,7 @@ export default function Auditions() {
             <br />
             President
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center", fontSize: "2vh" }}>
             <picture>
               <source srcSet={chrisWebp} type="image/webp" />
               <source srcSet={chris} type="image/jpeg" />
@@ -79,7 +79,7 @@ export default function Auditions() {
             <br />
             Treasurer
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center", fontSize: "2vh" }}>
             <picture>
               <source srcSet={lizzieWebp} type="image/webp" />
               <source srcSet={lizzie} type="image/jpeg" />
@@ -90,7 +90,7 @@ export default function Auditions() {
             <br />
             Musical Director
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center", fontSize: "2vh" }}>
             <picture>
               <source srcSet={erinWebp} type="image/webp" />
               <source srcSet={erin} type="image/jpeg" />
@@ -178,11 +178,10 @@ export default function Auditions() {
            box-sizing: border-box;
            text-decoration: none;
            font-family: "helvetica-local", sans-serif;
-           font-weight: 300;
            color: #000000;
            text-align: center;
            transition: all 0.5s;
-          font-size: 20px;
+          font-size: 2vh;
            background-color: #ffffff;
           opacity: 0.7;
           cursor: pointer;

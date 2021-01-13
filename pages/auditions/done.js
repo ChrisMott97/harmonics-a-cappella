@@ -76,11 +76,10 @@ export default function Auditions() {
            box-sizing: border-box;
            text-decoration: none;
            font-family: "helvetica-local", sans-serif;
-           font-weight: 300;
            color: #000000;
            text-align: center;
            transition: all 0.5s;
-          font-size: 20px;
+          font-size: 2vh;
            background-color: #ffffff;
           opacity: 0.7;
           cursor: pointer;
