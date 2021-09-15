@@ -8,4 +8,13 @@ module.exports = withOptimizedImages({
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/auditions',
+        destination: 'https://calendly.com/exeterharmonics/auditions',
+        permanent: false,
+      },
+    ]
+  },
 });
